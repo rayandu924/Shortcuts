@@ -1,0 +1,81 @@
+{
+  "name": "Desktop Shortcuts",
+  "version": "2.0.0",
+  "description": "Desktop-style shortcut icons — add, arrange, and launch apps, files, and URLs",
+  "author": "MyWallpaper",
+  "entry": "index.js",
+  "settings": {
+    "iconsData": {
+      "type": "string",
+      "label": "Icons Data",
+      "default": "[]",
+      "hidden": true
+    },
+    "actionsSection": {
+      "type": "section",
+      "label": "Actions"
+    },
+    "addShortcut": {
+      "type": "button",
+      "label": "Add Shortcut",
+      "buttonLabel": "Add Shortcut"
+    },
+    "scanDesktop": {
+      "type": "button",
+      "label": "Import Desktop Icons",
+      "buttonLabel": "Scan Desktop"
+    },
+    "clearAll": {
+      "type": "button",
+      "label": "Remove All Icons",
+      "buttonLabel": "Clear All"
+    },
+    "appearanceSection": {
+      "type": "section",
+      "label": "Appearance"
+    },
+    "iconSize": {
+      "type": "range",
+      "label": "Icon Size",
+      "min": 32,
+      "max": 96,
+      "step": 4,
+      "default": 48
+    },
+    "gridSpacing": {
+      "type": "range",
+      "label": "Grid Spacing",
+      "min": 60,
+      "max": 160,
+      "step": 5,
+      "default": 90
+    },
+    "showLabels": {
+      "type": "boolean",
+      "label": "Show Labels",
+      "default": true
+    },
+    "labelColor": {
+      "type": "color",
+      "label": "Label Color",
+      "default": "#ffffff"
+    }
+  },
+  "permissions": {
+    "fileAccess": {
+      "reason": "Display shortcut icon images"
+    },
+    "system": {
+      "capabilities": ["openPath", "getDesktopIcons"]
+    }
+  },
+  "defaultLayout": {
+    "xPercent": 0,
+    "yPercent": 0,
+    "widthPercent": 100,
+    "heightPercent": 100
+  },
+  "ui": {
+    "pointerEvents": "auto"
+  }
+}
