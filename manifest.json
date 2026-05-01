@@ -1,6 +1,6 @@
 {
   "name": "Desktop Shortcuts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Desktop-style shortcut icons — add, arrange, and launch apps, files, and URLs",
   "author": "MyWallpaper",
   "entry": "index.js",
